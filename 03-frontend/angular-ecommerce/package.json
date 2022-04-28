@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --ssl=true --sslKey=./ssl-localhost/localhost.key --sslCert=./ssl-localhost/localhost.crt",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -24,8 +24,10 @@
     "@ng-bootstrap/ng-bootstrap": "^8.0.4",
     "@okta/okta-angular": "^3.2.2",
     "@okta/okta-signin-widget": "^6.2.0",
+    "@types/stripe-v3": "^3.1.26",
     "bootstrap": "^4.4.1",
     "rxjs": "~6.5.4",
+    "stripe": "^8.219.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
